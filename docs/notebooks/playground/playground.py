@@ -30,7 +30,7 @@ def run():
 
     @dlt.resource(table_name="users")
     def users():
-        yield from requests.get("https://jsonplaceholder.typicode.com/users").json()
+        yield requests.get("https://jsonplaceholder.typicode.com/users").json()
 
     pipeline = dlt.pipeline(
         pipeline_name="users_pipeline",

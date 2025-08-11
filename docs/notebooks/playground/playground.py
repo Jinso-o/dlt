@@ -45,7 +45,8 @@ def run():
 @app.cell
 def view(pipeline):
     # NOTE: This line displays the data of the users table in a marimo table
-    return pipeline.dataset().users.df()
+    pipeline.dataset().users.df()
+    return 
 
 
 @app.cell
